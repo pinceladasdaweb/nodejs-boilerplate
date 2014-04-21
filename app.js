@@ -22,15 +22,19 @@ app.engine('html', hbs.__express);
 
 app.use(express.static(__dirname + '/public'));
 
-app.get('/index.html', function(req, res){
+var route = express.Router();
+
+route.get('/index.html', function(req, res){
     res.redirect(301, '/');
 });
-app.get('/', router.index);
-app.get('/projects.html', router.projects);
-app.get('/services.html', router.services);
-app.get('/downloads.html', router.downloads);
-app.get('/about.html', router.about);
-app.get('/contact.html', router.contact);
+route.get('/', router.index);
+route.get('/projects.html', router.projects);
+route.get('/services.html', router.services);
+route.get('/downloads.html', router.downloads);
+route.get('/about.html', router.about);
+route.get('/contact.html', router.contact);
+
+app.use('/', route);
 
 app.listen(port);
 console.log('Your server goes on localhost:' + port);
