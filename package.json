@@ -15,6 +15,7 @@
   "license": "MIT",
   "devDependencies": {
     "express": "~4.0.0",
-    "hbs": "~2.6.0"
+    "hbs": "~2.6.0",
+    "moment": "~2.6.0"
   }
 }
