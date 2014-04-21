@@ -1,0 +1,20 @@
+{
+  "name": "express4-boilerplate",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Create apps with Express 4",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:pinceladasdaweb/nodejs-boilerplate.git"
+  },
+  "author": "Pedro Rogerio",
+  "license": "MIT",
+  "devDependencies": {
+    "express": "~4.0.0",
+    "hbs": "~2.6.0"
+  }
+}

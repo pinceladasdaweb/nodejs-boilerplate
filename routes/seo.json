@@ -1,0 +1,35 @@
+{
+    "default": {
+        "title": "Express Boilerplate"
+    },
+    "index": {
+        "title": "Home - Express Boilerplate",
+        "description": "",
+        "body_class": "home"
+    },
+    "projects": {
+        "title": "Projects - Express Boilerplate",
+        "description": "",
+        "body_class": "projects"
+    },
+    "services": {
+        "title": "Services - Express Boilerplate",
+        "description": "",
+        "body_class": "services"
+    },
+    "downloads": {
+        "title": "Downloads - Express Boilerplate",
+        "description": "",
+        "body_class": "downloads"
+    },
+    "about": {
+        "title": "About - Express Boilerplate",
+        "description": "",
+        "body_class": "about"
+    },
+    "contact": {
+        "title": "Contact - Express Boilerplate",
+        "description": "",
+        "body_class": "contact"
+    }
+}
