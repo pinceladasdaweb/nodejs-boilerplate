@@ -16,23 +16,7 @@
 
     <div class="container">
 
-        <div class="masthead">
-          <h3 class="muted">{{seo.default.title}}</h3>
-          <div class="navbar">
-            <div class="navbar-inner">
-              <div class="container">
-                <ul class="nav">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="projects.html">Projects</a></li>
-                  <li><a href="services.html">Services</a></li>
-                  <li><a href="downloads.html">Downloads</a></li>
-                  <li {{#if seo.about.body_class}}class="active"{{/if}}><a href="about.html">About</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+      {{> head }}
 
       <div class="placeholder">
         {{> about }}
@@ -40,11 +24,7 @@
 
       <hr>
 
-    <div class="footer">
-        <p>&copy; Company {{dateFormat creation_date format="YYYY"}}</p>
-    </div>
-
-    </div>
+      {{> footer }}
 
   </body>
 </html>
