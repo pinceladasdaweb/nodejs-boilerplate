@@ -33,6 +33,7 @@ route.get('/services.html', router.services);
 route.get('/downloads.html', router.downloads);
 route.get('/about.html', router.about);
 route.get('/contact.html', router.contact);
+route.get('*', router.notFound);
 
 app.use('/', route);
 

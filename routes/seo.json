@@ -31,5 +31,10 @@
         "title": "Contact - Express Boilerplate",
         "description": "",
         "body_class": "contact"
+    },
+    "notFound": {
+        "title": "404 Error - Express Boilerplate",
+        "description": "",
+        "body_class": "error"
     }
 }
