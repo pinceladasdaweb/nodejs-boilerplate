@@ -8,12 +8,8 @@ var express = require('express'),
 hbs.registerPartials(__dirname + '/views/partials');
 
 hbs.registerHelper('dateFormat', function(context, block) {
-	if (moment) {
-		var f = block.hash.format || "MMM DD, YYYY hh:mm:ss A";
-			return moment(context).format(f);
-		} else {
-			return context;
-	};
+	var f = block.hash.format || "MMM DD, YYYY hh:mm:ss A";
+	return moment(context).format(f);
 });
 
 app.set('view engine', 'html');
