@@ -14,6 +14,11 @@
   "author": "Pedro Rogerio",
   "license": "MIT",
   "devDependencies": {
+    "assemble": "~0.4.37",
+    "grunt": "~0.4.4",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-replace": "~0.7.7",
     "express": "~4.0.0",
     "hbs": "~2.6.0",
     "moment": "~2.6.0"
