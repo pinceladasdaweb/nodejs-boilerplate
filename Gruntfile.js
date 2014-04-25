@@ -27,7 +27,7 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     cwd: 'public/',
-                    src: ['**'],
+                    src: ['**', '.htaccess'],
                     dest: 'build/'
                 }]
             }
