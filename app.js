@@ -1,22 +1,30 @@
 var express = require('express'),
-	hbs = require('hbs'),
-	moment = require('moment'),
-	router = require(__dirname + '/routes').router,
-	app = express(),
-	port = process.env.PORT || 3002;
+    compress = require('compression'),
+    hbs = require('hbs'),
+    moment = require('moment'),
+    router = require(__dirname + '/routes').router,
+    app = express(),
+    port = process.env.PORT || 3002;
 
 hbs.registerPartials(__dirname + '/views/partials');
 
 hbs.registerHelper('dateFormat', function(context, block) {
-	var f = block.hash.format || "MMM DD, YYYY hh:mm:ss A";
-	return moment(context).format(f);
+    var f = block.hash.format || "MMM DD, YYYY hh:mm:ss A";
+    return moment(context).format(f);
 });
 
 app.set('view engine', 'html');
 app.set('views', __dirname + '/views/pages');
 app.engine('html', hbs.__express);
 
-app.use(express.static(__dirname + '/public'));
+app.use(compress({
+    filter: function(req, res) {
+        return (/json|text|javascript|css|image\/svg\+xml|application\/x-font-ttf/).test(res.getHeader('Content-Type'));
+    },
+    level: 9
+}));
+
+app.use(express.static(__dirname + '/public', {maxAge: 86400000}));
 
 var route = express.Router();
 
