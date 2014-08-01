@@ -1,6 +1,6 @@
 {
   "name": "express4-boilerplate",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": true,
   "description": "Create apps with Express 4",
   "main": "app.js",
@@ -14,14 +14,14 @@
   "author": "Pedro Rogerio",
   "license": "MIT",
   "devDependencies": {
-    "assemble": "~0.4.37",
-    "grunt": "~0.4.4",
+    "assemble": "~0.4.41",
+    "grunt": "~0.4.5",
     "grunt-contrib-copy": "~0.5.0",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-replace": "~0.7.7",
-    "express": "~4.0.0",
-    "compression": "~1.0.1",
-    "hbs": "~2.6.0",
-    "moment": "~2.6.0"
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt-replace": "~0.7.8",
+    "express": "~4.7.2",
+    "compression": "~1.0.9",
+    "hbs": "~2.7.0",
+    "moment": "~2.8.0"
   }
 }
