@@ -14,7 +14,7 @@ npm install
 And run the app:
 
 ```shell
-node app.js
+nodemon app.js
 ```
 
 ## Build Static HTML
