@@ -19,9 +19,5 @@ exports.router = {
     },
     contact: function(req, res) {
         res.render('contact', { seo : seo });
-    },
-    notFound: function(req, res) {
-        res.status(404);
-        res.render('404', { seo : seo });
     }
 };
