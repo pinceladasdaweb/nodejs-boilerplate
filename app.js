@@ -42,6 +42,7 @@ route.get('/contact.html', router.contact);
 app.use('/', route);
 
 app.use(error.notFound);
+app.use(error.serverError);
 
 app.listen(port);
 console.log('Your server goes on localhost:' + port);
