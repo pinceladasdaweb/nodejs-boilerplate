@@ -1,11 +1,11 @@
-var express = require('express'),
+var express  = require('express'),
     compress = require('compression'),
-    hbs = require('hbs'),
-    moment = require('moment'),
-    router = require(__dirname + '/routes').router,
-    app = express(),
-    error = require(__dirname + '/middleware/error');
-    port = process.env.PORT || 3002;
+    hbs      = require('hbs'),
+    moment   = require('moment'),
+    router   = require(__dirname + '/routes').router,
+    app      = express(),
+    error    = require(__dirname + '/middleware/error'),
+    port     = process.env.PORT || 3002;
 
 hbs.registerPartials(__dirname + '/views/partials');
 
