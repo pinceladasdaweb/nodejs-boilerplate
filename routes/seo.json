@@ -36,5 +36,10 @@
         "title": "404 Error - Express Boilerplate",
         "description": "",
         "body_class": "error"
+    },
+    "serverError": {
+        "title": "500 Error - Express Boilerplate",
+        "description": "",
+        "body_class": "error"
     }
 }

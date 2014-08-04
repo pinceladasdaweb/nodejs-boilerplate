@@ -4,6 +4,7 @@ var express = require('express'),
     moment = require('moment'),
     router = require(__dirname + '/routes').router,
     app = express(),
+    error = require(__dirname + '/middleware/error');
     port = process.env.PORT || 3002;
 
 hbs.registerPartials(__dirname + '/views/partials');
@@ -37,9 +38,10 @@ route.get('/services.html', router.services);
 route.get('/downloads.html', router.downloads);
 route.get('/about.html', router.about);
 route.get('/contact.html', router.contact);
-route.get('*', router.notFound);
 
 app.use('/', route);
+
+app.use(error.notFound);
 
 app.listen(port);
 console.log('Your server goes on localhost:' + port);
