@@ -27,6 +27,9 @@ grunt build
 
 One 'build' directory will be created in the root of your project with all HTML's processed and their rightful assets. The .htaccess file is responsible for doing the rewrite your URL's assets.
 
+## Sites developed with this boilerplate
+* [Locaweb Soluções Corporativas](http://www.locawebcorp.com.br/)
+
 ### Especial Thanks
 
 Mr. [William Bruno](https://github.com/wbruno/) the great tips.
