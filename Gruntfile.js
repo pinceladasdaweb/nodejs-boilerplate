@@ -20,7 +20,7 @@ module.exports = function (grunt) {
             }
         },
         clean: {
-            all: ['build/*.html']
+            all: ['build/**/*.html']
         },
         copy: {
             main: {
