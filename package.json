@@ -1,6 +1,6 @@
 {
   "name": "express4-boilerplate",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "private": true,
   "description": "Create apps with Express 4",
   "main": "app.js",
@@ -19,10 +19,10 @@
     "grunt-contrib-copy": "~0.5.0",
     "grunt-contrib-clean": "~0.6.0",
     "grunt-replace": "~0.7.9",
-    "express": "~4.8.6",
-    "compression": "~1.0.11",
+    "express": "~4.9.1",
+    "compression": "~1.1.0",
     "hbs": "~2.7.0",
-    "moment": "~2.8.2",
+    "moment": "~2.8.3",
     "nodemon": "~1.2.1"
   }
 }
