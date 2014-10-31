@@ -1,10 +1,11 @@
 {
   "name": "express4-boilerplate",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "private": true,
   "description": "Create apps with Express 4",
   "main": "app.js",
   "scripts": {
+    "start": "nodemon -e js,hbs,html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -13,16 +14,18 @@
   },
   "author": "Pedro Rogerio",
   "license": "MIT",
+  "dependencies": {
+    "express": "~4.10.1",
+    "compression": "~1.2.0",
+    "hbs": "~2.7.0",
+    "moment": "~2.8.3"
+  },
   "devDependencies": {
     "assemble": "~0.4.42",
+    "nodemon": "~1.2.1",
     "grunt": "~0.4.5",
     "grunt-contrib-copy": "~0.7.0",
     "grunt-contrib-clean": "~0.6.0",
-    "grunt-replace": "~0.7.9",
-    "express": "~4.9.7",
-    "compression": "~1.1.0",
-    "hbs": "~2.7.0",
-    "moment": "~2.8.3",
-    "nodemon": "~1.2.1"
+    "grunt-replace": "~0.8.0"
   }
 }
