@@ -5,7 +5,7 @@
   "description": "Create apps with Express 4",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon -e js,hbs,html",
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,10 +15,10 @@
   "author": "Pedro Rogerio",
   "license": "MIT",
   "dependencies": {
-    "express": "~4.10.1",
+    "express": "~4.10.2",
     "compression": "~1.2.0",
     "hbs": "~2.7.0",
-    "moment": "~2.8.3"
+    "moment": "~2.8.4"
   },
   "devDependencies": {
     "assemble": "~0.4.42",
