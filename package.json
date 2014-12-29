@@ -1,6 +1,6 @@
 {
   "name": "express4-boilerplate",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "private": true,
   "description": "Create apps with Express 4",
   "main": "app.js",
@@ -17,7 +17,7 @@
   "dependencies": {
     "express": "~4.10.6",
     "compression": "~1.2.2",
-    "hbs": "~2.7.0",
+    "hbs": "~2.8.0",
     "moment": "~2.8.4"
   },
   "devDependencies": {
