@@ -46,3 +46,5 @@ app.use(error.serverError);
 
 app.listen(port);
 console.log('Your server goes on localhost:' + port);
+
+module.exports = app;
