@@ -1,5 +1,4 @@
-nodejs-boilerplate
-==================
+# nodejs-boilerplate [![Build Status](https://travis-ci.org/pinceladasdaweb/nodejs-boilerplate.svg?branch=master)](https://travis-ci.org/pinceladasdaweb/nodejs-boilerplate)
 
 Create Apps with Node.JS + Express 4 and Handlebars.js
 
