@@ -1,6 +1,6 @@
 {
   "name": "express4-boilerplate",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "Create apps and static sites with Node.js and Express 4",
   "main": "app.js",
