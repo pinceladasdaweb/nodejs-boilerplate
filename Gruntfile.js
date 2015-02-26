@@ -20,14 +20,14 @@ module.exports = function (grunt) {
             }
         },
         clean: {
-            all: ['build/**/*.html']
+            all: ['build/**/*.*', '!.htaccess']
         },
         copy: {
             main: {
                 files: [{
                     expand: true,
                     cwd: 'public/',
-                    src: ['**', '.htaccess'],
+                    src: ['**'],
                     dest: 'build/'
                 }]
             }
