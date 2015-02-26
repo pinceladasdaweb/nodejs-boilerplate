@@ -1,9 +1,26 @@
 #!/usr/bin/env node
-var app = require('../app'), server;
+var app,
+    server,
+    cluster = require('cluster'),
+    numCPUs = require('os').cpus().length;
 
-server = app.listen(3002, '127.0.0.1', function () {
-    var host = server.address().address,
-        port = server.address().port;
+if (cluster.isMaster && !module.parent.parent) {
+    for (var i = 0; i < numCPUs; i++) {
+      cluster.fork();
+    }
 
-    console.log('App listening at http://%s:%s', host, port);
-});
+    cluster.on('exit', function(worker, code, signal) {
+      console.log('worker ' + worker.process.pid + ' died');
+    });
+} else {
+    app = require('../app');
+
+    server = app.listen(3002, '127.0.0.1', function () {
+        var host = server.address().address,
+            port = server.address().port;
+
+        console.log('App listening at http://%s:%s with worker id %s', host, port, cluster.worker.id);
+    });
+
+    module.exports = app;
+}
