@@ -4,8 +4,7 @@ var express  = require('express'),
     moment   = require('moment'),
     router   = require(__dirname + '/routes').router,
     app      = express(),
-    error    = require(__dirname + '/middleware/error'),
-    port     = process.env.PORT || 3002;
+    error    = require(__dirname + '/middleware/error');
 
 hbs.registerPartials(__dirname + '/views/partials');
 
@@ -43,8 +42,5 @@ app.use('/', route);
 
 app.use(error.notFound);
 app.use(error.serverError);
-
-app.listen(port);
-console.log('Your server goes on localhost:' + port);
 
 module.exports = app;
