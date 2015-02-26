@@ -4,7 +4,7 @@ var app,
     cluster = require('cluster'),
     numCPUs = require('os').cpus().length;
 
-if (cluster.isMaster) {
+if (cluster.isMaster && !module.parent.parent) {
     for (var i = 0; i < numCPUs; i++) {
       cluster.fork();
     }
