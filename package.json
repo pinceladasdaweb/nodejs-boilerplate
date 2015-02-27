@@ -1,6 +1,6 @@
 {
   "name": "express4-boilerplate",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "description": "Create apps and static sites with Node.js and Express 4",
   "main": "app.js",
@@ -40,6 +40,9 @@
     "static"
   ],
   "license": "MIT",
+  "engines": {
+    "node": "0.10.x"
+  },
   "dependencies": {
     "express": "~4.12.0",
     "compression": "~1.4.1",
