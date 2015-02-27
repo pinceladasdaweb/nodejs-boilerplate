@@ -4,7 +4,7 @@ var app,
     cluster = require('cluster'),
     numCPUs = require('os').cpus().length;
 
-if (cluster.isMaster && !module.parent.parent) {
+if (cluster.isMaster && !module.parent) {
     for (var i = 0; i < numCPUs; i++) {
       cluster.fork();
     }
@@ -21,6 +21,4 @@ if (cluster.isMaster && !module.parent.parent) {
 
         console.log('App listening at http://%s:%s with worker id %s', host, port, cluster.worker.id);
     });
-
-    module.exports = app;
 }
