@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-var app,
-    server,
-    cluster = require('cluster'),
-    numCPUs = require('os').cpus().length;
+var cluster = require('cluster'),
+    numCPUs = require('os').cpus().length,
+    app,
+    server;
 
 if (cluster.isMaster && !module.parent) {
     for (var i = 0; i < numCPUs; i++) {
@@ -21,4 +21,6 @@ if (cluster.isMaster && !module.parent) {
 
         console.log('App listening at http://%s:%s with worker id %s', host, port, cluster.worker.id);
     });
+
+    module.exports = app;
 }
