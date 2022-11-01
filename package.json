@@ -47,7 +47,7 @@
     "compression": "^1.7.4",
     "express": "^4.17.1",
     "hbs": "^4.1.1",
-    "moment": "^2.29.2"
+    "moment": "^2.29.4"
   },
   "devDependencies": {
     "assemble": "^0.24.3",
