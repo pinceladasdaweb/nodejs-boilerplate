@@ -45,7 +45,7 @@
   },
   "dependencies": {
     "compression": "^1.8.1",
-    "express": "^4.22.1",
+    "express": "^4.22.2",
     "hbs": "^4.2.0",
     "moment": "^2.29.4"
   },
